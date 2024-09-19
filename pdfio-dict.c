@@ -776,7 +776,7 @@ bool					// O - `true` on success, `false` on failure
 pdfioDictSetNull(pdfio_dict_t *dict,	// I - Dictionary
 		 const char   *key)	// I - Key
 {
-  _pdfio_value_t temp;			// New value
+  _pdfio_value_t temp = {0};			// New value
 
 
   // Range check input...
